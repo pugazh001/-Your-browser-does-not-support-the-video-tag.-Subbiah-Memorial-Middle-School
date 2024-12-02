@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playwrite+BE+VLG:wght@100..400&display=swap');
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+}
+
+.navbar-brand {
+   
+    font-size: 22px;
+    font-weight: bold;
+}
+.logo-image{
+  
+    height: 80px;
+    object-fit: fill;
+}
+
+.video-section {
+    position: relative;
+}
+
+.video-section video {
+    width: 100%;
+    height: auto;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffeb3b;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+.nav-link:hover{
+  background-color: rgb(12, 12, 12);
+  color: yellow !important;   
+  border-radius: 5px; 
+}
+
+.about-us-section, .gallery-section, .video-gallery-section, .contact-us-section {
+    padding: 50px 0;
+}
+
+footer {
+    background-color: #f6ff7d;
+    padding: 20px 0;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+    color: #007bff;
+}
+
+/* about us */
+.sub-title {
+    margin-bottom: 2rem;
+    animation: fadeInRight 3s ease-in-out;
+}
+
+.animated-paper {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeInUp 4s ease-in-out;
+}
+
+/* Animation for FadeInUp */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation for FadeInRight */
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* gallery */
+
+.gallery-section {
+    margin-top: 20px;
+}
+
+.gallery-image {
+    padding: 10px;
+    width: 400px;
+    height: 600px;
+  
+    object-fit:fill; /* This ensures the image fills the square without distortion */
+    cursor: pointer;
+    border-radius: 8px; /* Optional: adds rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+}
+
+.hidden {
+    display: none;
+}
+#fullImage {
+    width: 400px;
+    height: 600px;
+    object-fit:fill; /* Ensures the image covers the dimensions without distortion */
+}
+
+/* Optionally, adjust the modal dialog size to fit the image */
+.modal-dialog {
+    max-width: 420px; /* Adjust to fit the image width with padding */
+}
+.view-more-image{
+    background-color: yellow !important;
+    color: black !important;
+    border-radius: 5px;
+    border: #ffeb3b;
+}
+.view-more-image:hover{
+    background-color: black !important;
+    color: yellow !important;
+}
+
+/* video */
+.video-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sub-title {
+    color: rgb(179, 1, 179);
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+    animation: fadeInRight 2s ease-in-out;
+}
+
+.video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.video-card {
+    flex: 1 1 calc(50% - 20px); /* 3 columns */
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.video-card:hover {
+    transform: scale(1.05);
+}
+
+.video-frame {
+    width: 100%;
+    height: 400px;
+    border-radius: 4px 4px 0 0;
+    border: none;
+}
+
+.video-title {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .video-card {
+        flex: 1 1 100%; /* Switch to 1 column */
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* contact us */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+    animation: fadeInRight 2s ease-in-out;
+}
+
+/* Grid Styles */
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.grid-item {
+    flex: 1 1 calc(50% - 20px);
+    box-sizing: border-box;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.map-container {
+    height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f110e6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid-item {
+        flex: 1 1 100%; /* Switch to 1 column */
+    }
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* footer */
+.bg-yellow {
+    background-color: rgb(255, 255, 169) !important;
+}
+
+.up-icon{
+    display: flex;
+    justify-content: end;
+}
+.scroll-to-top{
+    background-color: rgb(179, 1, 179);
+    margin-right: 30px;
+    
+}
